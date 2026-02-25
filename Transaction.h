@@ -1,0 +1,1 @@
+#ifndef TRANSACTION_H\n#define TRANSACTION_H\n\n#include <string>\n\nclass CTransaction {\npublic:\n    int ID;\n    double Amount;\n    std::string Currency;\n    std::string Status;\n\n    CTransaction(int id, double amount, const std::string& currency, const std::string& status) : ID(id), Amount(amount), Currency(currency), Status(status) {}\n};\n\n#endif // TRANSACTION_H
